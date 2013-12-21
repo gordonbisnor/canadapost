@@ -1,5 +1,5 @@
 # CanadaPost gem for use with Canada Post REST API 
-module CanadaPost
+module Canadapost
 	
 	class Base
 
