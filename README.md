@@ -32,11 +32,12 @@ Or install it yourself as:
     canada_post.get_rates
 
 get_rates returns a hash of services, including:
+
 - :service_name
 - :service_code
-- :price_details[:due]
-- :service_link[:href]
-- :service_standard[:expected_transit_time]
+- :price_details, with [:due] as the total amount
+- :service_link, with [:href] as the URL
+- :service_standard, with [:expected_transit_time] as the estimated number of days for delivery (from today)
 
 **dimension hash**
 {weight: x.x, height: x.x, length: x.x, width: x.x } 

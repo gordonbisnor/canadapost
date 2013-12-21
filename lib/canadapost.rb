@@ -14,11 +14,11 @@ class Canadapost
 		:customer, 
 		:origin_postal_code
 
-  # @param [Hash] options 
-  # @option options [String] :username your API key username
-  # @option options [String] :password your API key password
-  # @option options [Boolean] :development to specify development mode
-  # @option options [String] :customer_number your Canada Post customer account number
+  # @param [Hash] params
+  # @option params [String] :username your API key username
+  # @option params [String] :password your API key password
+  # @option params [Boolean] :development to specify development mode
+  # @option params [String] :customer_number your Canada Post customer account number
 	def initialize(params = {})
 		@username = params[:username]
 	 	@password = params[:password]

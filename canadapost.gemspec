@@ -4,11 +4,11 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = "canadapost"
-  spec.version       = "0.0.1"
+  spec.version       = "0.0.2"
   spec.authors       = ["Gordon B. Isnor"]
   spec.email         = ["gordonbisnor@gmail.com"]
   spec.description   = %q{A basic gem to interface with the Canada POST REST API}
-  spec.summary       = %q{A basic gem to interface with the Canada POST REST API}
+  spec.summary       = %q{Works with Ruby on Rails. Requires HTTParty. Currently only addressing the Get Rates endpoint.}
   spec.homepage      = "http://www.github.com/gordonbisnor/canadapost"
   spec.license       = "MIT"
 
