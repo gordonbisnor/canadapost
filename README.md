@@ -26,10 +26,10 @@ canada_post = Canadapost.new({
 			 	development: true (optional) 
 			 	})
 
-			 canada_post.origin_postal_code = "xxx"
-			 canada_post.dimensions = dimension_hash			 
-			 canada_post.customer = customer_hash
-			 canada_post.get_rates
+canada_post.origin_postal_code = "xxx"
+canada_post.dimensions = dimension_hash			 
+canada_post.customer = customer_hash
+canada_post.get_rates
 
 get_rates returns a hash of services, including:
 - :service_name
