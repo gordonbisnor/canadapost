@@ -1,4 +1,4 @@
-module CanadaPost
+module Canadapost
 	class Rating < Base
 		attr_accessor :dimensions, :customer, :origin_postal_code
 
