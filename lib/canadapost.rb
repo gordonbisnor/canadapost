@@ -85,7 +85,7 @@ class Canadapost
 			do_request(get_rates_xml, get_rates_url)
 			services = results[:price_quotes][:price_quote]
 			services = services.map(&:deep_symbolize_keys!)
-			return hash
+			return services
 		rescue => e
 			Rails.logger.info "ERROR :#{e}"
 		end
