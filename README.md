@@ -19,7 +19,7 @@ Or install it yourself as:
     $ gem install canadapost
 
 ## Usage
-canada_post = CanadaPost.new({
+canada_post = Canadapost.new({
 	 			username: "xxx", 
 			 	password: "xxx",
 			 	customer_number: 'xxx',
