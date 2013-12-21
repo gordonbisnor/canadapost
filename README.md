@@ -27,8 +27,8 @@ Or install it yourself as:
 			 	})
 
     canada_post.origin_postal_code = "xxx"
-    canada_post.dimensions = dimension_hash			 
-    canada_post.customer = customer_hash
+    canada_post.dimensions = {}
+    canada_post.customer = {}
     canada_post.get_rates
 
 get_rates returns a hash of services, including:
@@ -38,14 +38,14 @@ get_rates returns a hash of services, including:
 - :service_link[:href]
 - :service_standard[:expected_transit_time]
 
+**dimension hash**
+{weight: x.x, height: x.x, length: x.x, width: x.x } 
+Weight is kilograms; height, length, width are centimetres
+
 **customer hash:**
 for us: { :'united-states' => { :'zip-code' => 'xxxxx' } }
 for canada: { domestic: { :'postal-code' => 'xxxxxx' } }
 for international: { international: { :'country-code' => 'xx' } }
-
-**dimension hash**
-{weight: x.x, height: x.x, length: x.x, width: x.x } 
-Weight is kilograms; height, length, width are centimetres
 
 ## Contributing
 
