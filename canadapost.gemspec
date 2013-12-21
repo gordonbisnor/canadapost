@@ -5,7 +5,7 @@ require 'canadapost/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "canadapost"
-  spec.version       = Canadapost::VERSION
+  spec.version       = "0.0.1"
   spec.authors       = ["Gordon B. Isnor"]
   spec.email         = ["gordonbisnor@gmail.com"]
   spec.description   = %q{A basic gem to interface with the Canada POST REST API}
