@@ -87,7 +87,7 @@ class Canadapost
 			services = services.map(&:deep_symbolize_keys!)
 			return services
 		rescue => e
-			Rails.logger.info "ERROR :#{e}"
+			Rails.logger.info "Canada Post Gem Error get_rates: #{e}"
 		end
 		return services
 	end
