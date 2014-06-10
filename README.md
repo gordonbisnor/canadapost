@@ -1,6 +1,6 @@
 # Canadapost
 
-A gem to facilitate Ruby on Rails interaction with Canada Post's REST API. 
+A gem to facilitate Ruby on Rails interaction with <span style="color:red;">Canada Post</span>'s REST API. 
 
 This is currently the most basic implementation that I needed for a particular project, and only has provisions for obtaining a list of shipping rates. I invite you to extend or improve as you see fit.
 
