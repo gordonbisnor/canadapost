@@ -1,6 +1,6 @@
 # Canadapost
 
-A gem to facilitate Ruby on Rails interaction with <span style="color:red;">Canada Post</span>'s REST API. 
+A gem to facilitate Ruby on Rails interaction with Canada Post's REST API. 
 
 This is currently the most basic implementation that I needed for a particular project, and only has provisions for obtaining a list of shipping rates. I invite you to extend or improve as you see fit.
 
@@ -8,28 +8,37 @@ This is currently the most basic implementation that I needed for a particular p
 
 Add this line to your application's Gemfile:
 
-    gem 'canadapost'
+``` ruby
+gem 'canadapost'
+```
 
 And then execute:
 
-    $ bundle
+```
+$ bundle
+```
 
 Or install it yourself as:
 
-    $ gem install canadapost
+```
+$ gem install canadapost
+```
 
 ## Usage
-    canada_post = Canadapost.new({
-	 			username: "xxx", 
-			 	password: "xxx",
-			 	customer_number: 'xxx',
-			 	development: true (optional) 
-			 	})
 
-    canada_post.origin_postal_code = "xxx"
-    canada_post.dimensions = {}
-    canada_post.customer = {}
-    canada_post.get_rates
+``` ruby
+canada_post = Canadapost.new({
+    username: "xxx", 
+ 	password: "xxx",
+	customer_number: 'xxx',
+ 	development: true (optional) 
+ 	})
+
+canada_post.origin_postal_code = "xxx"
+canada_post.dimensions = {}
+canada_post.customer = {}
+canada_post.get_rates
+```
 
 get_rates returns a hash of services, including:
 
