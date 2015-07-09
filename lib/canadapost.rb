@@ -30,11 +30,8 @@ class Canadapost
 	# @return [Hash] Hash with symbolized keys
 	def results
 		resp = if response.parsed_response.is_a? String
-			Rails.logger.info "RESPONSE: #{response.inspect}"
-			Rails.logger.info "RESPONSE: #{response.parsed_response.inspect}"
 			Hash.from_xml(response.parsed_response.gsub("\n", ""))
 		else
-			Rails.logger.info "RESPONSE: #{response.parsed_response.inspect}"
 			response.parsed_response
 		end
 		hash = resp.deep_symbolize_keys!
@@ -87,12 +84,10 @@ class Canadapost
 		begin
 			do_request(get_rates_xml, get_rates_url)
 			services = results[:price_quotes][:price_quote]
-			Rails.logger.info "SERVICES: #{services.inspect}"
 			services = services.map(&:deep_symbolize_keys!)
-			Rails.logger.info "SERVICES: #{services.inspect}"
 			return services
-		rescue => e
-			Rails.logger.info "Canada Post Gem Error get_rates: #{e}"
+		rescue
+			return nil
 		end
 		return services
 	end

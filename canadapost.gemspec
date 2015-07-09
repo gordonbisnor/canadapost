@@ -2,9 +2,12 @@
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
+# Maintain your gem's version:
+require "canadapost/version"
+
 Gem::Specification.new do |spec|
   spec.name          = "canadapost"
-  spec.version       = "0.0.3"
+  spec.version       = Canadapost::VERSION
   spec.authors       = ["Gordon B. Isnor"]
   spec.email         = ["gordonbisnor@gmail.com"]
   spec.description   = %q{A basic gem to interface with the Canada POST REST API}
